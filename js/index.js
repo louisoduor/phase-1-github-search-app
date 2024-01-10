@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         .then((data) => {
           console.log(data);
   
-        document.getElementById("github-container").innerHTML = `
+        document.getElementById("repos-list").innerHTML = `
         <a target ="_blank"  href = "https://www.github.com/${originalName}">  <img src = "${data.avatar_url}"/></a>
         <p>${originalName} <br></p>
         <a target = "_blank" href = "https://www.github.com/${originalName}?tab=repositories"><p>View Repositories</p></a>
